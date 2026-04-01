@@ -55,18 +55,18 @@ const expectationsData = [
 ];
 
 const timelineEvents = [
-  { date: "Jan 2025", event: "Stable start \u2014 46% of consumers optimistic, low unemployment, steady inflation", type: "positive" },
-  { date: "Apr 2, 2025", event: '"Liberation Day" \u2014 sweeping 25% tariffs on imports from China, Canada, Mexico announced', type: "negative" },
-  { date: "Apr\u2013May 2025", event: "Consumer pull-forward: rush purchases in electronics ahead of price hikes", type: "neutral" },
+  { date: "Jan 2025", event: "Stable start - 46% of consumers optimistic, low unemployment, steady inflation", type: "positive" },
+  { date: "Apr 2, 2025", event: '"Liberation Day" - sweeping 25% tariffs on imports from China, Canada, Mexico announced', type: "negative" },
+  { date: "Apr-May 2025", event: "Consumer pull-forward: rush purchases in electronics ahead of price hikes", type: "neutral" },
   { date: "May 2025", event: "Net sentiment drops 32%. Tariffs become #2 consumer concern after inflation. Michigan index near pandemic lows.", type: "negative" },
-  { date: "Jun\u2013Jul 2025", event: "Brief rebound as trade deal negotiations begin; 90-day pause on some tariffs", type: "positive" },
+  { date: "Jun-Jul 2025", event: "Brief rebound as trade deal negotiations begin; 90-day pause on some tariffs", type: "positive" },
   { date: "Aug 2025", event: "New tariffs on ~70 countries; consumer sentiment reverses gains. Year-ahead inflation expectations hit 4.9%.", type: "negative" },
   { date: "H2 2025", event: "CE sales decline 2.2% YoY. Lower/middle-income buyers pull back sharply. Best Buy lowers FY26 guidance.", type: "negative" },
   { date: "Q4 2025", event: "Holiday season cautious. 50% of consumers delay electronics purchases. Tariff awareness wanes slightly.", type: "negative" },
   { date: "Jan 2026", event: "CTA forecasts $565B US consumer tech revenue. Circana projects just 0.2% growth to $112B. Michigan inches up to 56.4.", type: "neutral" },
-  { date: "Feb 2026", event: "Michigan at 56.6 \u2014 21% below Jan '25. Deep wealth divide persists: stockholders recover, others stagnate.", type: "neutral" },
-  { date: "Feb 28, 2026", event: "US military conflict with Iran begins. Oil prices surge to $110\u2013120/barrel. Gas approaches $4.00/gallon.", type: "negative" },
-  { date: "Mar 2026", event: "Michigan plunges 6% to 53.3 \u2014 bottom 1st percentile historically. Expectations Index falls to 51.7. Year-ahead inflation expectations jump to 3.8%.", type: "negative" },
+  { date: "Feb 2026", event: "Michigan at 56.6 - 21% below Jan '25. Deep wealth divide persists: stockholders recover, others stagnate.", type: "neutral" },
+  { date: "Feb 28, 2026", event: "US military conflict with Iran begins. Oil prices surge to $110-120/barrel. Gas approaches $4.00/gallon.", type: "negative" },
+  { date: "Mar 2026", event: "Michigan plunges 6% to 53.3 - bottom 1st percentile historically. Expectations Index falls to 51.7. Year-ahead inflation expectations jump to 3.8%.", type: "negative" },
   { date: "Mar 31, 2026", event: "Conference Board edges up to 91.8, but Expectations Index drops to 70.9 (below 80 recession threshold since Feb '25). Electronics purchase plans improve on 6-mo basis.", type: "neutral" },
 ];
 
@@ -181,7 +181,7 @@ export default function Dashboard() {
           US Consumer Electronics Sentiment
         </h1>
         <p style={{ color: "#64748b", fontSize: 14, margin: "8px 0 0", lineHeight: 1.5 }}>
-          Jan 2025 &mdash; Apr 2026 &middot; From tariff shock to geopolitical conflict: the compounding confidence crisis in consumer electronics
+          Jan 2025 - Apr 2026 | From tariff shock to geopolitical conflict: the compounding confidence crisis in consumer electronics
         </p>
       </div>
 
@@ -243,7 +243,7 @@ export default function Dashboard() {
                 New Headwind: US\u2013Iran Conflict (Feb 28, 2026\u2013Present)
               </h4>
               <p style={{ fontSize: 12, color: "#94a3b8", margin: 0, lineHeight: 1.6 }}>
-                The US military conflict with Iran has introduced a second major shock on top of ongoing tariff pressure. Oil prices surged to $110\u2013120/barrel, pushing gas toward $4/gallon nationally. Two-thirds of March Michigan survey responses were collected after the conflict began \u2014 those respondents showed sharply higher inflation expectations and weaker sentiment. The short-run economic outlook plunged 14% and year-ahead personal finance expectations fell 10%. Middle and higher-income consumers with stock wealth \u2014 previously the most resilient cohort \u2014 exhibited the steepest drops.
+                The US military conflict with Iran has introduced a second major shock on top of ongoing tariff pressure. Oil prices surged to $110-120/barrel, pushing gas toward $4/gallon nationally. Two-thirds of March Michigan survey responses were collected after the conflict began \u2014 those respondents showed sharply higher inflation expectations and weaker sentiment. The short-run economic outlook plunged 14% and year-ahead personal finance expectations fell 10%. Middle and higher-income consumers with stock wealth - previously the most resilient cohort - exhibited the steepest drops.
               </p>
             </div>
           </div>
@@ -287,7 +287,7 @@ export default function Dashboard() {
             padding: "20px 20px 8px",
           }}>
             <h3 style={{ fontSize: 13, fontWeight: 700, margin: "0 0 16px", color: "#94a3b8" }}>
-              Michigan Consumer Sentiment Index &middot; Jan 2025\u2013Mar 2026
+              Michigan Consumer Sentiment Index | Jan 2025-Mar 2026
             </h3>
             <ResponsiveContainer width="100%" height={220}>    
               <AreaChart data={sentimentData} margin={{ top: 5, right: 20, left: -10, bottom: 5 }}>
@@ -338,10 +338,10 @@ export default function Dashboard() {
 
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             {[
-              { title: "Peak-to-Current Drop", value: "-27%", detail: "Michigan index fell from 73.2 (Jan '25) to 53.3 (Mar '26) \u2014 bottom 1st percentile of historical readings", color: "#ef4444" },
+              { title: "Peak-to-Current Drop", value: "-27%", detail: "Michigan index fell from 73.2 (Jan '25) to 53.3 (Mar '26) - bottom 1st percentile of historical readings", color: "#ef4444" },
               { title: "Mar '26 Divergence", value: "Split", detail: "Michigan fell 6% on gas/geopolitical anxiety. Conference Board edged up on resilient labor market. Different survey weights explain the gap.", color: "#f59e0b" },
-              { title: "Inflation Expectations", value: "3.8%", detail: "Year-ahead expected inflation jumped in March \u2014 largest monthly increase since April 2025, driven by Iran conflict energy shock", color: "#ef4444" },
-              { title: "Wealth Divide Cracking", value: "New", detail: "In March, middle/higher-income consumers and stockholders \u2014 previously resilient \u2014 exhibited the steepest sentiment drops for the first time", color: "#8b5cf6" },
+              { title: "Inflation Expectations", value: "3.8%", detail: "Year-ahead expected inflation jumped in March - largest monthly increase since April 2025, driven by Iran conflict energy shock", color: "#ef4444" },
+              { title: "Wealth Divide Cracking", value: "New", detail: "In March, middle/higher-income consumers and stockholders - previously resilient - exhibited the steepest sentiment drops for the first time", color: "#8b5cf6" },
             ].map((card, i) => (
               <div key={i} style={{
                 flex: "1 1 200px",
@@ -375,7 +375,7 @@ export default function Dashboard() {
           }}>
             <h3 style={{ fontSize: 14, fontWeight: 700, margin: "0 0 4px" }}>The Present vs. Expectations Divergence</h3>
             <p style={{ fontSize: 12, color: "#64748b", margin: "0 0 20px" }}>
-              Conference Board sub-indices &middot; The widening gap between "now is OK" and "the future looks bad" is one of the widest on record
+              Conference Board sub-indices | The widening gap between "now is OK" and "the future looks bad" is one of the widest on record
             </p>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={expectationsData} margin={{ top: 5, right: 20, left: -10, bottom: 5 }}>
@@ -401,7 +401,7 @@ export default function Dashboard() {
             }}>
               <h4 style={{ fontSize: 13, fontWeight: 700, color: "#ef4444", margin: "0 0 8px" }}>The Recession Signal</h4>
               <p style={{ fontSize: 12, color: "#94a3b8", margin: 0, lineHeight: 1.6 }}>
-                The Expectations Index has been below 80 since February 2025 \u2014 13 consecutive months. Historically, sustained readings below 80 have preceded recessions. At 70.9 in March 2026, it sits well inside the danger zone. The Michigan Expectations component is even worse at 51.7.
+                The Expectations Index has been below 80 since February 2025 - 13 consecutive months. Historically, sustained readings below 80 have preceded recessions. At 70.9 in March 2026, it sits well inside the danger zone. The Michigan Expectations component is even worse at 51.7.
               </p>
             </div>
             <div style={{
@@ -425,7 +425,7 @@ export default function Dashboard() {
             }}>
               <h4 style={{ fontSize: 13, fontWeight: 700, color: "#ea580c", margin: "0 0 8px" }}>What It Means for CE</h4>
               <p style={{ fontSize: 12, color: "#94a3b8", margin: 0, lineHeight: 1.6 }}>
-                This "OK today, worried about tomorrow" dynamic is uniquely bad for electronics \u2014 a category where big-ticket purchases are easily deferred. Conference Board noted electronics purchase plans improved on a 6-month rolling basis in March, but that metric lags. Consumer spending trends remain focused on "cheap thrills" and necessities, not discretionary tech.
+                This "OK today, worried about tomorrow" dynamic is uniquely bad for electronics - a category where big-ticket purchases are easily deferred. Conference Board noted electronics purchase plans improved on a 6-month rolling basis in March, but that metric lags. Consumer spending trends remain focused on "cheap thrills" and necessities, not discretionary tech.
               </p>
             </div>
           </div>
@@ -444,7 +444,7 @@ export default function Dashboard() {
           }}>
             <h3 style={{ fontSize: 14, fontWeight: 700, margin: "0 0 4px" }}>Consumer Electronics Sales Growth (YoY %)</h3>
             <p style={{ fontSize: 12, color: "#64748b", margin: "0 0 20px" }}>
-              Pull-forward buying in H1 masked a sharper H2 decline &middot; *Q1 '26 = Circana forecast &middot; Source: Circana POS data
+              Pull-forward buying in H1 masked a sharper H2 decline | *Q1 '26 = Circana forecast | Source: Circana POS data
             </p>
             <ResponsiveContainer width="100%" height={260}>
               <BarChart data={ceSpendingData} margin={{ top: 5, right: 20, left: -10, bottom: 5 }}>
@@ -472,7 +472,7 @@ export default function Dashboard() {
             }}>
               <h4 style={{ fontSize: 13, fontWeight: 700, color: "#10b981", margin: "0 0 8px" }}>H1 2025: The Pull-Forward Effect</h4>
               <p style={{ fontSize: 12, color: "#94a3b8", margin: 0, lineHeight: 1.6 }}>
-                Consumers rushed to buy electronics in March\u2013April ahead of expected tariff price hikes. H1 retail dollar sales grew 1.5%. Computers and PCs were the primary growth driver. Best Buy initially maintained guidance despite tariff uncertainty.
+                Consumers rushed to buy electronics in March-April ahead of expected tariff price hikes. H1 retail dollar sales grew 1.5%. Computers and PCs were the primary growth driver. Best Buy initially maintained guidance despite tariff uncertainty.
               </p>
             </div>
             <div style={{
@@ -484,7 +484,7 @@ export default function Dashboard() {
             }}>
               <h4 style={{ fontSize: 13, fontWeight: 700, color: "#ef4444", margin: "0 0 8px" }}>H2 2025: The Pullback</h4>
               <p style={{ fontSize: 12, color: "#94a3b8", margin: 0, lineHeight: 1.6 }}>
-                Sales declined 2.2% YoY. Pull-forward spending left a demand vacuum. Best Buy missed Q1 revenue expectations and cut FY26 guidance to $41.1\u201341.9B. China import share at Best Buy dropped from 55% to 30\u201335% as supply chains shifted. Comps fell 0.7%.
+                Sales declined 2.2% YoY. Pull-forward spending left a demand vacuum. Best Buy missed Q1 revenue expectations and cut FY26 guidance to $41.1-41.9B. China import share at Best Buy dropped from 55% to 30-35% as supply chains shifted. Comps fell 0.7%.
               </p>
             </div>
             <div style={{
@@ -496,7 +496,7 @@ export default function Dashboard() {
             }}>
               <h4 style={{ fontSize: 13, fontWeight: 700, color: "#ea580c", margin: "0 0 8px" }}>2026 Outlook: Risks Mounting</h4>
               <p style={{ fontSize: 12, color: "#94a3b8", margin: 0, lineHeight: 1.6 }}>
-                Circana forecasts just 0.2% growth to $112B. Avg prices climbing ~3%. Now the Iran conflict adds energy cost pressure on top of tariffs. Consumer spending trend is "cheap thrills and necessary services" \u2014 electronics fall squarely in the deferrable category. Pockets of growth: PCs (Win 10 EOL), tablets (+$200M), smart glasses.
+                Circana forecasts just 0.2% growth to $112B. Avg prices climbing ~3%. Now the Iran conflict adds energy cost pressure on top of tariffs. Consumer spending trend is "cheap thrills and necessary services" - electronics fall squarely in the deferrable category. Pockets of growth: PCs (Win 10 EOL), tablets (+$200M), smart glasses.
               </p>
             </div>
           </div>
@@ -515,7 +515,7 @@ export default function Dashboard() {
           }}>
             <h3 style={{ fontSize: 14, fontWeight: 700, margin: "0 0 4px" }}>Tariff-Driven Price Increases vs Projected Purchase Decline</h3>
             <p style={{ fontSize: 12, color: "#64748b", margin: "0 0 20px" }}>
-              By CE product category &middot; Source: CTA/Trade Partnership Worldwide analysis
+              By CE product category | Source: CTA/Trade Partnership Worldwide analysis
             </p>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={categoryImpactData} layout="vertical" margin={{ top: 5, right: 20, left: 40, bottom: 5 }}>
@@ -539,10 +539,10 @@ export default function Dashboard() {
             <h4 style={{ fontSize: 13, fontWeight: 700, margin: "0 0 14px", color: "#94a3b8" }}>Key Category Dynamics</h4>
             <div style={{ display: "grid", gap: 12 }}>
               {[
-                { cat: "Smartphones", insight: "Largest segment at 53% revenue share. Prices up ~26% under full tariffs. Buying plans still trending upward on 6-month CB basis in March \u2014 driven by upgrade cycles and BNPL financing. But Iran-driven gas costs are squeezing disposable income.", color: "#3b82f6" },
+                { cat: "Smartphones", insight: "Largest segment at 53% revenue share. Prices up ~26% under full tariffs. Buying plans still trending upward on 6-month CB basis in March - driven by upgrade cycles and BNPL financing. But Iran-driven gas costs are squeezing disposable income.", color: "#3b82f6" },
                 { cat: "Laptops & Tablets", insight: "Most exposed category with potential 68% purchase decline. Windows 10 end-of-support driving some replacement demand. Tablets expected to add $200M+ in 2026. Best Buy saw computing/mobile growth even as overall comps fell.", color: "#8b5cf6" },
                 { cat: "Game Consoles", insight: "Steepest projected price increase at 69%. Low-margin products forced to pass tariff costs directly to consumers. Secondhand/resale market surging. CTA projects $123B in reduced consumer purchasing power from tariffs.", color: "#ef4444" },
-                { cat: "Smart Home & Wearables", insight: "More resilient with lower tariff exposure. Smart glasses emerging as growth area \u2014 Circana highlights as an innovation pocket. Matter standard driving multi-brand interoperability. Conference Board noted electronics purchase plans improved on 6-mo rolling basis in March.", color: "#10b981" },
+                { cat: "Smart Home & Wearables", insight: "More resilient with lower tariff exposure. Smart glasses emerging as growth area - Circana highlights as an innovation pocket. Matter standard driving multi-brand interoperability. Conference Board noted electronics purchase plans improved on 6-mo rolling basis in March.", color: "#10b981" },
               ].map((item, i) => (
                 <div key={i} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                   <div style={{ width: 3, minHeight: 40, borderRadius: 2, background: item.color, marginTop: 2, flexShrink: 0 }} />
@@ -566,7 +566,7 @@ export default function Dashboard() {
             borderRadius: 14,
             padding: "24px 28px",
           }}>
-            <h3 style={{ fontSize: 14, fontWeight: 700, margin: "0 0 20px" }}>Key Events Shaping CE Sentiment &middot; Jan 2025\u2013Apr 2026</h3>
+            <h3 style={{ fontSize: 14, fontWeight: 700, margin: "0 0 20px" }}>Key Events Shaping CE Sentiment | Jan 2025-Apr 2026</h3>
             <div style={{ position: "relative", paddingLeft: 24 }}>
               <div style={{
                 position: "absolute",
@@ -615,12 +615,12 @@ export default function Dashboard() {
               Data Sources
             </div>
             <p style={{ fontSize: 11, color: "#64748b", margin: 0, lineHeight: 1.6 }}>
-              University of Michigan Surveys of Consumers (final Mar '26: 53.3, released 3/27/26) &middot;
-              The Conference Board Consumer Confidence Index (Mar '26: 91.8, released 3/31/26) &middot;
-              McKinsey ConsumerWise Quarterly Surveys &middot; Circana Future of Technology Report (Jan 2026) &middot;
-              CTA U.S. Consumer Technology Industry Forecast (Jan 2026) &middot; Deloitte Consumer Products Outlook 2026 &middot;
-              CTA/Trade Partnership Worldwide Tariff Impact Analysis &middot; Morning Consult Tariff Sentiment Tracker &middot;
-              NielsenIQ Global Tech Market Outlook 2026 &middot; Best Buy FY26 Q1 Earnings (May 2025)
+              University of Michigan Surveys of Consumers (final Mar '26: 53.3, released 3/27/26) |
+              The Conference Board Consumer Confidence Index (Mar '26: 91.8, released 3/31/26) |
+              McKinsey ConsumerWise Quarterly Surveys | Circana Future of Technology Report (Jan 2026) |
+              CTA U.S. Consumer Technology Industry Forecast (Jan 2026) | Deloitte Consumer Products Outlook 2026 |
+              CTA/Trade Partnership Worldwide Tariff Impact Analysis | Morning Consult Tariff Sentiment Tracker |
+              NielsenIQ Global Tech Market Outlook 2026 | Best Buy FY26 Q1 Earnings (May 2025)
             </p>
           </div>
         </div>
@@ -635,7 +635,7 @@ export default function Dashboard() {
         color: "#334155",
         textAlign: "center",
       }}>
-        Analysis compiled April 1, 2026 &middot; Data from multiple industry sources &middot; Some projections based on partial tariff scenarios
+        Analysis compiled April 1, 2026 | Data from multiple industry sources | Some projections based on partial tariff scenarios
       </div>
     </div>
   );
