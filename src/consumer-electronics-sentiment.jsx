@@ -243,7 +243,7 @@ export default function Dashboard() {
                 New Headwind: US-Iran Conflict (Feb 28, 2026-Present)
               </h4>
               <p style={{ fontSize: 12, color: "#94a3b8", margin: 0, lineHeight: 1.6 }}>
-                The US military conflict with Iran has introduced a second major shock on top of ongoing tariff pressure. Oil prices surged to $110-120/barrel, pushing gas toward $4/gallon nationally. Two-thirds of March Michigan survey responses were collected after the conflict began \u2014 those respondents showed sharply higher inflation expectations and weaker sentiment. The short-run economic outlook plunged 14% and year-ahead personal finance expectations fell 10%. Middle and higher-income consumers with stock wealth - previously the most resilient cohort - exhibited the steepest drops.
+                The US military conflict with Iran has introduced a second major shock on top of ongoing tariff pressure. Oil prices surged to $110-120/barrel, pushing gas toward $4/gallon nationally. Two-thirds of March Michigan survey responses were collected after the conflict began - those respondents showed sharply higher inflation expectations and weaker sentiment. The short-run economic outlook plunged 14% and year-ahead personal finance expectations fell 10%. Middle and higher-income consumers with stock wealth - previously the most resilient cohort - exhibited the steepest drops.
               </p>
             </div>
           </div>
