@@ -223,7 +223,7 @@ export default function Dashboard() {
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 28 }}>
             <StatCard value="53.3" label="Michigan Sentiment (Mar '26)" delta="-27%" deltaLabel="vs Jan 2025" color="#ef4444" />
             <StatCard value="70.9" label="CB Expectations Index" delta="-15.5" deltaLabel="vs Jan '25 &middot; Below 80 recession signal" color="#f59e0b" />
-            <StatCard value="3.8%" label="Year-Ahead Inflation Expect." delta="+0.4pp" deltaLabel="vs Feb '26 &middot; largest jump since Apr '25" color="#ef4444" />
+            <StatCard value="3.8%" label="Year-Ahead Inflation Expected" delta="+0.4pp" deltaLabel="vs Feb '26 &middot; largest jump since Apr '25" color="#ef4444" />
             <StatCard value="0.2%" label="2026 CE sales growth forecast" delta="-1.3pp" deltaLabel="vs H1 2025 pace" color="#6b7280" />
           </div>
 
@@ -413,7 +413,7 @@ export default function Dashboard() {
             }}>
               <h4 style={{ fontSize: 13, fontWeight: 700, color: "#10b981", margin: "0 0 8px" }}>The Labor Market Buffer</h4>
               <p style={{ fontSize: 12, color: "#94a3b8", margin: 0, lineHeight: 1.6 }}>
-                The Present Situation Index actually rose to 123.3 in March \u2014 its highest of 2026. Jobs remain "plentiful," and consumers assess current conditions as manageable. This buffer is why the headline CB number edged up even as future expectations deteriorated sharply.
+                The Present Situation Index actually rose to 123.3 in March - its highest of 2026. Jobs remain "plentiful," and consumers assess current conditions as manageable. This buffer is why the headline CB number edged up even as future expectations deteriorated sharply.
               </p>
             </div>
             <div style={{
